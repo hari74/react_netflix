@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  :root{
+    --primary-color:rgb(193, 17, 25);
+    --secondart-color:rgb(0,0,0);
+    --color-white:#fff;
+  }
+  
+  body {
+    
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+   
+   
+    
+  }
+  
+  
+  .page1{
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%), url('https://assets.nflxext.com/ffe/siteui/vlv3/5e16108c-fd30-46de-9bb8-0b4e1bbbc509/29d8d7d7-83cc-4b5f-aa9b-6fd4f68bfaa6/IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    max-height: 120vh;
+    object-fit: cover;
+    /* background-size: cover; */
+    background-position: center;
+    border-bottom: 8px solid #444;
+   
+    
+
+  }
+  
+  .navbar {
+display: flex;
+padding: 20px 50px;
+justify-content:space-between;
+
+
+  }
+  
+  .navbar__brand {
+    width: 100px;
+    height: 100%;
+    font-weight: bolder;
+  }
+  
+  .brand__logo {
+    width: 10.4375rem;
+    height: 2.8125rem;
+    /* margin-left:120px ; */
+   
+  }
+  
+  
+  .signin__button {
+    background-color:var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--color-white);
+    font-weight: bold;
+    padding: 0.20rem 0.5rem;
+    border-radius: 4px;
+    height: 35px;
+    width: 90px;
+    font-size: 14px;
+    margin-right: 60px;
+    border: none;
+    outline: none;
+
+  }
+  
+  .navbar__nav__items {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  } 
+ 
+  .image__container {
+    width: 100%;
+    height: 100vh;
+  }
+  .bg__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } 
+
+ 
+
+  
+
+  /* landing pages */
+  .text{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+ .content{
+  text-align: center;
+  /* color: white; */
+ }
+
+  .content h1{
+    font-weight: 800;
+    font-size: 48px;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .content h2{
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+    /* margin: 0 100px; */
+  }
+.content p{
+  margin: 0 50px;
+  font-weight: 400;
+  font-size: 20px;
+  /* margin-bottom: 10px; */
+}
+
+.search{
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.search input{
+    height: 55px;
+    width: 400px;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    background-color:rgba(0, 0, 0, 0.8);
+    color: white;
+    border: 2px solid #999;
+    /* position: absolute; */
+    /* top: 420px; */
+    /* left: 30%; */
+
+    border: 0.5px solid rgb(200, 197, 197);
+    
+  }
+  .search input[type="email"]::placeholder {
+    color: #aaa;
+  
+  }
+  .search input[type="email"]::placeholder {
+    transition: transform 0.3s ease;
+  }
+  
+  .search input[type="email"]:focus::placeholder {
+    transform: translateY(-10px);
+    font-size: 13px;
+  }
+  .search input:focus:valid{
+    border: 1px solid green;
+  }
+  .search input:focus:invalid{
+    border: 2px solid red;
+  }
+  
+
+  .search input:focus {
+    outline: 2px solid white;
+   
+  }
+  .email-btn{
+    font-size: 1.5rem;
+    padding: .2rem 1rem;
+    border-radius: 5px;
+    height:50px;
+    width: 200px;
+    font-weight: normal;
+    margin-left: 10px;
+    background-color:#E50914;
+    outline: none;
+    border: none;
+    color: #fff;
+    
+  }
+
+  .email-btn:hover{
+    background-color: #C11119;
+  }
+
+
+/* Media Queries */
+
+/* For smaller screens */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 2% 3%;
+    }
+
+    .brand__logo{
+        margin-left: 40px;
+    }
+
+    .content h1 {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .content h2 {
+        font-size: 16px;
+        margin-bottom: 25px;
+    }
+
+    .content p {
+        margin: 0 20px;
+        font-size: 18px;
+    }
+
+    .search input {
+        width: 380px;
+        top: 380px;
+        left: 10%;
+    }
+
+    .email-btn {
+        height: 50px;
+        width: 180px;
+        font-size: 1.2rem;
+        top: 380px;
+        left: 60%;
+    }
+}
+
+/* For even smaller screens */
+@media screen and (max-width: 599px) {
+  .navbar {
+      padding: 1% 2%;
+  }
+
+  .brand__logo {
+      margin-left: 10px;
+      width: 5.5625rem;
+    height: 1.6rem;
+  }
+
+  .dropdown__container{
+    width: 80px;
+  }
+  .language__drop__down {
+    /* line-height: 10px; */
+    /* padding: 4px 10px; */
+    font-size: 14px;
+  }
+
+  .signin__button {
+      height: 40px;
+      width: 70px;
+      padding: 5px 10px;
+      font-size: 0.875rem;
+    font-weight: 500;
+  }
+
+
+
+  .content h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      text-wrap: wrap;
+  }
+
+  .content h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+  }
+
+  .content p {
+      margin: 0 10px;
+      font-size: 18px;
+      margin-bottom: 20px;
+  }
+.search{
+  flex-wrap: wrap;
+}
+  .search input {
+      width: 80%;
+      max-width: 450px;
+      margin: 0 auto; 
+      margin-bottom: 20px; 
+  }
+
+  .email-btn {
+      height: 40px;
+      width: 100%;
+      max-width: 200px;
+      font-size: 1rem;
+      
+  }
+}
+
+
+@media screen and (max-width: 425px){
+  
+  .signin__button {
+    height: 30px;
+    width: 70px;
+    font-size: 12px;
+    margin: 0px;
+    margin-right: 25px;
+    
+ margin-top: 25px;
+  
+}
+.dropdown__container{
+  min-width: 10%;
+  
+ margin-top: 25px;
+ /* float: right; */
+}
+.brand__logo {
+ margin-top: 25px;
+  width: 5.5625rem;
+  height: 24px;
+}
+}
+@media screen and (max-width:365px){
+  .signin__button {
+    height: 35px;
+    width: 65px;
+    font-size: 12px;
+    
+   
+  
+}
+/* .dropdown__container{
+  min-width: 5%;
+  
+ 
+ 
+} */
+}
+

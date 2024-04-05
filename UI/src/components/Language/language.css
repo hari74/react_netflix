@@ -1,0 +1,44 @@
+.select_lang{
+    position: relative;
+  }
+.lang svg{
+    position: absolute;
+    top: 1rem;
+    left: 1%;
+  }
+  select{
+    width: 126px;
+    height: 32px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 24px;
+    padding: 4px 5px 4px 20px;
+    font-weight: 600;
+    text-align: center;
+    background: transparent;
+    color: #fff;
+    margin: 10px 0;
+    border: 2px solid #fff;
+  }
+  select option{
+    color: black;
+  }
+  .select:focus{
+    border: 2px solid white;
+  }
+
+  @media screen and (max-width:599px){
+ select{
+  width: 50px;
+  margin: 0;
+  margin-top: 17px;
+
+ }
+ .default-ltr-cache-4z3qvp {
+  position: absolute;
+  top: 6px;
+  margin-left: 5px;
+ }
+  }
+ 
+

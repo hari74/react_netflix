@@ -1,0 +1,36 @@
+.dropdown {
+    position: relative; /* Allows positioning the dropdown content */
+    display: inline-block; /* Ensures the button behaves like inline content */
+  }
+  
+  .dropdown-button {
+    background-color: #e0e0e0; /* Light gray background */
+    padding: 10px 16px; /* Padding for button content */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Indicate clickable behavior */
+  }
+  
+  .dropdown-content {
+    display: none; /* Initially hide the dropdown content */
+    position: absolute; /* Position the content relative to the button */
+    background-color: #f1f1f1; /* White background for the dropdown list */
+    min-width: 160px; /* Set minimum width for the list */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add a subtle shadow */
+    z-index: 1; /* Ensure the content is on top of other elements */
+  }
+  
+  .dropdown-content li {
+    color: black; /* Text color for list items */
+    padding: 12px 16px; /* Padding for each list item */
+    text-decoration: none; /* Remove underline from list items */
+    display: block; /* Make list items behave like blocks */
+  }
+  
+  .dropdown-content li:hover {
+    background-color: #ddd; /* Highlight on hover */
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block; /* Show dropdown content on hover */
+  }
+  

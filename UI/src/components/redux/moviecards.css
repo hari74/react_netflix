@@ -1,0 +1,33 @@
+/* .mvcard_main{
+    margin-top: 200px;
+} */
+ .movieCards h1{
+    FONT-SIZE:21.504px;
+    color: #e5e5e5;
+    font-weight: 500;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-bottom: 30px;
+    
+}
+.heading_top{
+    margin-top: 0;
+}
+.movieCards{
+    background-color: #141414;
+    /* border: 1px solid red; */
+    margin-top: -50px;
+}
+ @media (max-width:961px){
+    .heading_top{
+        margin-top: 0px;
+    }
+    .movieCards{
+        /* margin-top: 200px; */
+        padding-top: 100px;
+    margin-top: -80px;
+
+    
+    }
+ }
+

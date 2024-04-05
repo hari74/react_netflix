@@ -1,0 +1,67 @@
+.sele .genres_sel{
+    background: #000;
+    color: #fff;
+    display: flex;
+    align-items:  center;
+    /* gap: ; */
+    justify-content: space-between;
+    padding: 3px 10px;
+    width: 110px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    position:fixed;
+    top: 13% !important;
+    left: 250px;
+    z-index: 9000;
+    
+}
+.sele .genres_sel:hover{
+    background: #0000009f;
+}
+
+.sele .genres_sel i{
+    font-size: 10px;
+}
+.jj{
+    border: 1px solid red;
+}
+.sele ul{
+    background: #000;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    padding: 10px;
+    column-gap: 15px;
+    row-gap: 10px;
+    position: absolute;
+    top: 103%;
+    left: -0.5%;
+    z-index: 200;
+    display: none;
+    border: 1px solid rgb(225,225,225,0.3);
+
+
+}
+/* .sele p:hover ul{
+    display: grid !important;
+} */
+.sele ul li{
+    list-style-type: none;
+    font-size: 14px;
+    /* position: absolute; */
+    /* display: none; */
+
+}
+.sele ul li:hover{
+    /* background-color: #000; */
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sele_drop ul li{
+    display: none;
+}
+
+
+
+  

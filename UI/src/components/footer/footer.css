@@ -1,0 +1,48 @@
+.footer{
+  border-top: 8px solid #444;
+  padding: 72px 175px;
+  background: #000;
+}
+
+.footer .footer_data p:first-child{
+  margin-bottom: 1;
+}
+.footer .footer_data p{
+  font-size: 16px;
+  color: #ffffff;
+  opacity: 70%;
+  margin-bottom: 18px;
+  font-weight: 400;
+}
+.footer .footer_data p .num{
+  text-decoration: underline;
+}
+.footer .footer_links{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.footer .footer_links .links p{
+  text-decoration: underline;
+}
+.netflix_in{
+  margin-top: 15px;
+}
+
+
+@media(max-width:1260px){
+  .footer{
+    padding: 72px 32px;
+}
+}
+@media(max-width:960px){
+  .footer{
+    padding: 25px 32px;
+
+}
+.footer .footer_links{
+    grid-template-columns: repeat(2, 1fr);
+}
+.sign_mail input{
+    width: 350px;
+}
+}

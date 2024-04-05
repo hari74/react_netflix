@@ -1,0 +1,300 @@
+.sign_main{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4),rgba(0,0,0,0.3)),url(https://cdn.mos.cms.futurecdn.net/rDJegQJaCyGaYysj2g5XWY.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    /* padding: 0 127px; */
+    margin-bottom: 25px;
+}
+.logo_bar{
+    padding: 16px 32px 0px 32px;
+}
+.netflix_logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px 0px 16px;
+}
+.netflix_logo .logo{
+    width: 379px;
+}
+.netflix_logo .logo svg{ 
+    width: 148px;
+    height: 40px;
+}
+
+.sign_section{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 450px;
+    justify-content: center;
+
+}
+.sign_sub{
+    padding: 48px 68px;
+    background: #000000;
+    opacity: 0.9;
+    border-radius: 5px;
+
+}
+.sign_sub h1{
+    color: #ffffff;
+    font-size: 32px;
+    margin-bottom: 28px;
+}
+.remember span{
+    color: #ffffff;
+}
+.sign_sub .inp input{
+    width: 100%;
+    height: 56px;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 5px 15px;
+    margin-bottom: 16px;
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid #5E5E5E;
+}
+.sign_sub .inp input::placeholder{
+    color: #ffffff;
+    opacity: 0.8;
+}
+.sign_sub .inp input:focus{
+    outline: 2px solid #ffffff;
+}
+.sign_sub .inp input:valid{
+    border: 1px solid green;
+}
+
+.inp input[type="password"]::placeholder{
+    color: #aaa;
+}
+.inp input[type="password"]::placeholder{
+    transition: transform 0.3s ease;
+}
+.inp input[type="password"]:focus::placeholder{
+    transform: translateY(-10px);
+    font-size: 13px;
+}
+.inp input[type="email"]::placeholder {
+    color: #aaa;
+}
+
+.inp input[type="email"]::placeholder {
+    transition: transform 0.3s ease;
+}
+
+.inp input[type="email"]:focus::placeholder {
+    transform: translateY(-10px);
+    font-size: 13px;
+}
+
+.sign_sub .signin_btn{
+    text-align: center;
+}
+.sign_sub .signin_btn button{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #e50914;
+    color: #ffffff;
+    margin-bottom: 16px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+.sign_sub .signin_btn button:hover{
+    background: #c11119;
+}
+.sign_sub .signin_btn p{
+   color: #ffffff;
+   font-size: 16px; 
+}
+.sign_sub .signin_btn p:hover{
+    text-decoration: underline;
+}
+.sign_sub .remember{
+    display: inline-flex;
+    margin-top: 93px;
+    margin-bottom: 16px;
+}
+.sign_sub .remember input{
+    width: 12px;
+    height: 18px;
+    margin-right: 10px;
+}
+.sign_sub .remember input[type="checkbox"]{
+    background-color: #ffffff;
+    accent-color: #ffffff;
+}
+.sign_sub .remember span{
+    font-size: 16px;
+}
+.sign_sub .new{
+    margin-bottom: 13px;
+}
+.sign_sub .new p{
+    font-size: 16px;
+    color: #B9B6B7;
+}
+.sign_sub .new p .signup{
+    color: #ffffff;
+    font-weight: 500;
+}
+.sign_sub .new p .signup:hover{
+    text-decoration: underline;
+}
+.sign_sub .note p{
+    font-size: 13px;
+    color: #8B8B8B;
+    margin-bottom: 15px;
+}
+.sign_sub .note p .learn{
+    color: #0071EB;
+    cursor: default;
+}
+.sign_sub .note p .learn:hover{
+    text-decoration: underline;
+}
+.sign_sub .note .hide{
+    display: none;
+}
+.sign_sub .note .hide span{
+    color: #0071EB;
+}
+.sign_sub .note .hide span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.sign_sub .note .hide.show{
+    display: block;
+}
+.sign_sub .note p .learn.rem{
+    display: none;
+}
+
+
+.sign_footer{
+    width: 100%;
+    background: #000000;
+    opacity: 0.9;
+    margin-top: 40px;
+}
+.sign_footer_data{
+    padding: 72px 175px;
+}
+.sign_footer_data .sign_footer_ques{
+    margin-bottom: 25px;
+}
+.sign_footer_data .sign_footer_ques p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #B4B4B3;
+}
+.sign_footer_links{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.sign_footer_links p{
+    font-size: 15px;
+    color: #B4B4B3;
+    margin-bottom: 20px;
+    font-weight: 400;
+    text-decoration: 1px underline;
+}
+
+.sign_footer .sign_lang{
+    position: relative;
+}
+.sign_footer .set_select_lang svg{
+    position: absolute;
+    top: 41%;left: 1%;
+    color: #ffffff;
+}
+.sign_footer select{
+    width: 122px;
+    height: 32px;
+    font-size: 15px;
+    margin-right: 24px;
+    margin-top: 10px;
+    padding: 4px 5px 4px 20px;
+    font-weight: 500;
+    text-align: center;
+    background: transparent;
+    color: #ffffff;
+    border: 1px solid #A6A6A6;
+    border-radius: 3px;
+
+}
+.sign_footer select:focus{
+    outline: 2px solid #ffffff;
+}
+
+
+
+@media(max-width:1280px){
+    header{
+        padding: 0 0;
+    }
+    .netflix_logo{
+    padding: 8px 0px 0px 0px;
+
+    }
+    .sign_footer_data{
+        padding: 72px 32px;
+    }
+}
+
+@media(max-width:960px){
+
+    .logo_bar{
+        padding: 16px 32px 0px 32px;
+    }
+    .netflix_logo .logo svg{
+        width: 89px;
+        height: 24px;
+    }
+    .sign_footer_data{
+        padding: 35px 24px;
+    }
+    .sign_footer_links{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+@media(max-width:600px){
+    .logo_bar{
+        padding: 16px 24px 0px 24px;
+    }
+    header{
+        margin-bottom: 0px;
+    }
+    .sign_main{
+        background: #000000;
+    }
+    .sign_section{
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+    .sign_sub{
+        padding: 22px 24px 0px 24px;
+
+    }
+    .sign_sub .remember{
+        margin-top: 20px;
+    }
+    .netflix_logo .nav_menu .lang svg{
+        left: 20%;
+    }
+    .sign_footer{
+        margin-top: 0;
+        border-top: 1px solid #474747;
+    }
+    .sign_footer .set_select_lang svg{
+        left: 3%;
+    }
+}
